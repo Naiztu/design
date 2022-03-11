@@ -46,7 +46,7 @@ export default function Feedbacks() {
                         </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="text-left">12/02/2019</div>
+                        <div className="text-left">12/02/2020</div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
                         <div className="text-center font-medium text-green-500">
