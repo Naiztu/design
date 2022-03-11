@@ -62,9 +62,9 @@ export default function Index() {
           setOption(1);
         }}
       >
-        <span class="flex h-3 w-3 z-50 ">
-          <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-sky-400 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+        <span className="flex h-3 w-3 z-50 ">
+          <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-sky-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
         </span>
         <img
           className="w-full -translate-y-2 z-10 active:scale-90 transition-all ease-in-out"
