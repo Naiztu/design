@@ -132,7 +132,7 @@ export default function Navbar({ changeOption }) {
               </svg>
               <span className="pt-1 text-sm font-semibold">
                 {" "}
-                Member's Asignados
+                Member&apos;s Asignados
               </span>
             </button>
           </li>
