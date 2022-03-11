@@ -4,7 +4,7 @@ const dat = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
 export default function Feedbacks() {
   return (
     <>
-      <h1 className="title">Feebacks</h1>
+      <h1 className="title">Mis Feebacks</h1>
       <div className="flex flex-col justify-center mt-10 mx-auto w-3/4">
         <div className="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
           <div className="p-3">

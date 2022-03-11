@@ -5,7 +5,7 @@ const dat = [1, 2, 3, 4, 5, 7, 8];
 export default function Asignar() {
   return (
     <>
-      <h1 className="title -m-5">Asignar compañeros</h1>
+      <h1 className="title -my-5">Asignar compañeros</h1>
       <div className=" flex mt-3 mx-auto w-full items-center justify-center">
         <input
           type="text"
