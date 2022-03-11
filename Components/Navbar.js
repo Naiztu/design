@@ -8,27 +8,25 @@ export default function Navbar({ changeOption }) {
         id="sidenavSecExample"
       >
         <div className="pt-4 pb-2 px-6">
-          <a>
-            <div className="flex flex-col items-center">
-              <div
-                className="shrink-0 w-3/4 cursor-pointer active:scale-90 transition-all ease-in-out"
-                onClick={() => {
-                  changeOption(1);
-                }}
-              >
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp"
-                  className=" avatar"
-                  alt="Avatar"
-                />
-              </div>
-              <div className="grow ml-3">
-                <p className=" pt-2 text-xl text-center  font-bold">
-                  Nombre member
-                </p>
-              </div>
+          <div className="flex flex-col items-center">
+            <div
+              className="shrink-0 w-3/4 cursor-pointer active:scale-90 transition-all ease-in-out"
+              onClick={() => {
+                changeOption(1);
+              }}
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp"
+                className=" avatar w-full"
+                alt="Avatar"
+              />
             </div>
-          </a>
+            <div className="grow ml-3">
+              <p className=" pt-2 text-xl text-center  font-bold">
+                Nombre member
+              </p>
+            </div>
+          </div>
         </div>
         <div className="relative flex py-5 items-center">
           <div className="flex-grow border-t border-gray-400"></div>
