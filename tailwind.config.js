@@ -5,9 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        nue: ["Bebas Neue", "cursive"],
-      },
       colors: {
         dis: "#848484",
         hov: "#5C5C5C",
@@ -16,5 +13,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwind-scrollbar")],
-  variants: { scrollbar: ["rounded"] },
 };

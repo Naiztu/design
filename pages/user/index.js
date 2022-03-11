@@ -19,7 +19,6 @@ export default function Index() {
         {option === 5 && <MemberAsignados />}
       </div>
       <div
-        dataTooltipTarget="tooltip-default"
         type="button"
         onClick={() => {
           setOption(1);
@@ -41,14 +40,6 @@ export default function Index() {
             <path d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
           </svg>
         )}
-        <div
-          id="tooltip-default"
-          role="tooltip"
-          className="inline-block absolute invisible group-hover:visible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
-        >
-          Tooltip content
-          <div className="tooltip-arrow" dataPopperArrow></div>
-        </div>
       </div>
       <div
         className="fixed top-0 right-0 m-3 w-6 cursor-pointer"
