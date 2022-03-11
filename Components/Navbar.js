@@ -3,10 +3,7 @@ import React from "react";
 export default function Navbar({ changeOption }) {
   return (
     <>
-      <div
-        className=" h-full shadow-md bg-black text-white absolute w-60 scroll-m-4 scrollbar-thin scrollbar-thumb-black scrollbar-track-neutral"
-        id="sidenavSecExample"
-      >
+      <div className=" h-full shadow-md bg-black text-white absolute w-60 scroll-m-4 scrollbar-thin scrollbar-thumb-black scrollbar-track-neutral">
         <div className="pt-4 pb-2 px-6">
           <div className="flex flex-col items-center">
             <div
