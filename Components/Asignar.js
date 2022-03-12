@@ -1,8 +1,22 @@
 import React from "react";
-
-const dat = [1, 2, 3, 4, 5, 7, 8];
+import { useState, useEffect } from "react";
 
 export default function Asignar() {
+  const [info, setInfo] = useState([]);
+  const [info2, setInfo2] = useState([]);
+  useEffect(() => {
+    fetch("https://reqres.in/api/users?page=1")
+      .then((response) => {
+        return response.json();
+      })
+      .then((dat) => setInfo(info.concat(dat.data)));
+    fetch("https://reqres.in/api/users?page=2")
+      .then((response) => {
+        return response.json();
+      })
+      .then((dat) => setInfo2(info2.concat(dat.data)));
+  }, []);
+
   return (
     <>
       <h1 className="title -my-5">Asignar compañeros</h1>
@@ -16,7 +30,7 @@ export default function Asignar() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
-            className="my-2 mx-2 h-5 w-5"
+            className="my-2 mx-2 md:m-0 h-5 w-5"
           >
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
           </svg>
@@ -35,21 +49,20 @@ export default function Asignar() {
                   </tr>
                 </thead>
                 <tbody className="text-sm divide-y divide-gray-100">
-                  {dat.map((i) => (
-                    <tr key={i} className="hover:bg-blue-400/20">
+                  {info2.concat(info).map((i) => (
+                    <tr key={i.id} className="hover:bg-blue-400/20">
                       <td className="p-2 whitespace-nowrap  flex justify-between">
                         <div className="flex items-center">
                           <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
                             <img
                               className="rounded-full"
-                              src="https://emser.es/wp-content/uploads/2016/08/usuario-sin-foto.png"
+                              src={i.avatar}
                               width={40}
                               height={40}
-                              alt="Burak Long"
                             />
                           </div>
                           <div className="font-medium text-gray-800">
-                            {`Compañero ${i}`}
+                            {i.first_name + " " + i.last_name}
                           </div>
                         </div>
                         <button className="btn text-xs md:text-base ">

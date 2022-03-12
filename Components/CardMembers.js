@@ -1,16 +1,14 @@
 import React from "react";
 
-export default function CardMembers({ num }) {
+export default function CardMembers({ info }) {
+  const { avatar, first_name, last_name } = info || {};
   return (
     <div className="  w-[300px] rounded-xl px-4 py-6 shadow-sm shadow-black text-black md:mx-20 md:my-10 my-5 mx-2">
       <div className="flex flex-row space-x-8 items-center px-2">
-        <img
-          className="rounded-full md:w-20 w-16 h-16 md:h-20"
-          src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"
-        />
+        <img className="rounded-full md:w-20 w-16 h-16 md:h-20" src={avatar} />
         <div className="ml-6">
           <p className="text-lg md:text-xl font-bold mb-4 text-center ">
-            Member {num}
+            {first_name + " " + last_name}
           </p>
           <ul className="flex justify-center">
             <li>
