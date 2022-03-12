@@ -56,11 +56,11 @@ const options = {
 export default function UserIndex() {
   return (
     <>
-      <h1 className="title -mt-5">Hola de nuevo!</h1>
-      <p className="text text-center">
-        Aqui esta un resumen de tu desempeño a lo largo de este año.
+      <h1 className="title -mt-2 mx-auto">Hola de nuevo!</h1>
+      <p className="text text-center w-3/4 mx-auto">
+        Aqui esta un resumen de tu desempeño en las ultimas cuatro evaluaciones.
       </p>
-      <div className=" w-3/4 lg:w-1/2 mx-auto">
+      <div className=" w-11/12 lg:w-7/12 mx-auto mt-2">
         <Line data={data} options={options}></Line>
       </div>
       <div className="text-base lg:text-xl">

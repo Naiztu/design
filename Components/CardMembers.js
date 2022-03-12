@@ -2,16 +2,16 @@ import React from "react";
 
 export default function CardMembers({ num }) {
   return (
-    <div className="  w-[300px] rounded-xl px-4 py-6 shadow-sm shadow-black text-black mx-20 my-10 ">
-      <div className="flex flex-row space-x-8 items-center px-4">
+    <div className="  w-[300px] rounded-xl px-4 py-6 shadow-sm shadow-black text-black md:mx-20 md:my-10 my-5 mx-2">
+      <div className="flex flex-row space-x-8 items-center px-2">
         <img
-          className="rounded-full"
+          className="rounded-full md:w-20 w-16 h-16 md:h-20"
           src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"
-          width={80}
-          height={80}
         />
         <div className="ml-6">
-          <p className="text-xl font-bold mb-4">Member {num}</p>
+          <p className="text-lg md:text-xl font-bold mb-4 text-center ">
+            Member {num}
+          </p>
           <ul className="flex justify-center">
             <li>
               <svg
@@ -82,7 +82,9 @@ export default function CardMembers({ num }) {
         </div>
       </div>
 
-      <button className="btn block mt-10 mx-auto">Realizar evaluación</button>
+      <button className="btn block mt-10 mx-auto md:text-base text-sm">
+        Realizar evaluación
+      </button>
     </div>
   );
 }

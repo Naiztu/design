@@ -6,24 +6,23 @@ export default function Asignar() {
   return (
     <>
       <h1 className="title -my-5">Asignar compañeros</h1>
-      <div className=" flex mt-3 mx-auto w-full items-center justify-center">
+      <div className=" flex mt-3 mx-auto w-full items-center justify-center text-sm">
         <input
           type="text"
-          className="input-label ml-6 w-8/12 lg:w-4/12"
+          className="input-label w-8/12 lg:w-4/12"
           placeholder="Nombre de tu compañero"
         />{" "}
-        <span className="btn ml-2">
+        <span className="btn ml-2 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
             fill="currentColor"
+            className="my-2 mx-2 h-5 w-5"
           >
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
           </svg>
         </span>
       </div>
-      <div className="flex flex-col justify-center mt-5 mx-auto w-3/4">
+      <div className="flex flex-col justify-center mt-5 mx-auto w-11/12 sm:w-3/4">
         <div className="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
           <div className="p-3">
             <div className="overflow-x-auto">
@@ -53,9 +52,7 @@ export default function Asignar() {
                             {`Compañero ${i}`}
                           </div>
                         </div>
-                        <button
-                          className={` ${i % 2 === 0 && "bg-neutral"} btn`}
-                        >
+                        <button className="btn text-xs md:text-base ">
                           Agregar
                         </button>
                       </td>
@@ -77,10 +74,10 @@ export default function Asignar() {
           >
             <path d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
           </svg>
-          Previous page
+          <p className="hidden sm:inline">Previous page</p>
         </button>
         <button className="btn">
-          Next page
+          <p className="hidden sm:inline">Next page</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"

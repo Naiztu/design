@@ -11,7 +11,7 @@ export default function Index() {
   return (
     <div className="w-full h-screen overflow-y-auto flex flex-row ">
       <Navbar changeOption={setOption} />
-      <div className="ml-60 pt-10 w-full flex flex-col overflow-auto pb-5 scrollbar-thin scrollbar-thumb-black scrollbar-track-neutral">
+      <div className="ml-20 md:ml-60 pt-10 w-full flex flex-col overflow-auto pb-5 scrollbar-thin scrollbar-thumb-black scrollbar-track-neutral">
         {option === 1 && <UserIndex />}
         {option === 2 && <Feedbacks />}
         {option === 3 && <Asignar />}
